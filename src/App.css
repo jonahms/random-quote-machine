@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: pink;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#quote-box{
+  background-color: white;
+  width: 50rem;
+  margin: 10rem auto;
+  border-radius: 15px;
+  padding:3rem;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#author{
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+}
+
+
+#text{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#buttons{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.social-media{
+  display: flex;
+}
+.social-media> a {
+  margin-right: .5rem;
+  background-color: rgb(235, 217, 217);
+  padding: .7rem .7rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.social-media> a:hover {
+  opacity: 0.9;
 }
 
-.App-link {
-  color: #61dafb;
+.social-media > a img{
+  width:1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#new-quote{
+  background-color: pink;
+  border:none;
+  width:10rem;
+  color: black;
+  padding: .9rem .9rem;
+  font-size: 1rem;
+  font-weight: bold;
+  outline:none;
+  cursor: pointer;
 }
